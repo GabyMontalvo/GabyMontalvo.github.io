@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13x;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    /*Width=ancho*/ /*height=alto*/
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    /*Justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    /*Eliminar puntos*/
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+nav .nav-right-section a{
+    margin-right: 23px;
+    color: rgb(12, 12, 12);
+}
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+/*Estilo de imagen*/
+nav .nav-right-section img{
+    border-radius: 150px;
+    margin-left: 35px;
+    width: 35px;
+    height: 35px;
+
+background-color: #dfe1e5;
+
+}
+/* Main */
+
+main {
+    margin-top: 50px;
+    text-align: center;
+
+}
+/*seccion logo*/
+main .main-logo{
+    width: 500px;
+    height: 250px;
+    margin:0 auto;
+    margin-bottom: 45px;
+}
+/*Logo de google*/
+main .main-logo img{
+    width: 500px;
+    height: 250px;
+}
+/*section input*/
+main .main-input{
+    width: 530px;
+    margin:0 auto;
+    margin-bottom: 30px;
+}
+/**/
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 38px;
+    outline: none;
+
+}
+main .main-input-container input:hover{
+    box-shadow: 0 .8px .5px .5px #20212447;
+}
+main .main-input .search-icon{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/31/19/14/magnifying-glass-1294834_640.png");
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 20px;
+}
+main .main-input .micro-icon {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    width: 20px;
+    background-repeat: no-repeat;
+    background-color: #dfe1e5;
+    height: 20px;
+    background-position: center;
+    background-size: contain;
+}
+main .main-input .cam-icon{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA81BMVEX////qQzVChfT7vAU0qFPpOiryl5HpMR77ugD7uAD+8cv72NX82H3pNyf1q6bpMyH5ysc8gvT8wQDxeCTpPTYzfvP0jhtCh/TG2fyIsfgse/OVufiuyfodokT/+fi/1Pt3pffv9f784N796+rsUkXweXD+8/H2trHvb2XyjYbg6/1clvZvofZNjfXQ4Pz93YzuZFn8yDbL6NNXtnD/+OT+8sv+7b7//vX8y0XtWEv81W/8zlLtZVr4wr6gwPmTzqI+rl1Os2mw27vm9ep1womd1Kq54MP84tHwbgD+9tz946H3sYn+6LDoJQz0hwD5voXf8eSN2d1xAAAHnElEQVR4nO2d6WLaOBCAccDYlICBLZuWBMhFbhpytCRN0xwk6bFpd9//adbGabvFspFmRvK0q++/FX+Z0UiyLVQoWCwWi8VisVgsFovFYvn/Mj799AzG6w9VIOsbPUNybw4vWkW/AqT4MfCA1NzNQb2xpVfv0+FR6Ob7RTCtP547cNxaEIzq67r0xp+PQju4HIHhlJo32taRsKeLRbQejWFI4Japs3W86FfwemSGYSCDMmkcPxdp/OgMQ0dnm8zv9IwiP6kNHcfbIUrVR0zt1GkYltYGheAiVYLSG4ZhLOMFL0gFqQ2dYID0Gx/RCpIbOrURqqaOW4RdUI+h455jFI+oBTUYOu4ILkjcBzUZOjVwX6StovoMnQBYUR81COoxdDzQuHhK3gf1GTo1yOzmLMvQh9L66ELJMnR31AU/p+douAhunb1dhPFXGcbuzqYXpFt6l6qC42JaCCv+xeOp+n+MgI3LQVBLdVQdFdPqaKV4mI9ezFY9LVtrivU0pcz4lbdjPbcuTW/XEysGasVGHEK/+EzTfatQdYRhVAviWJyhR3kHMKb3TqjoqvREYSGtnGm7Z1V2RIqBylMN0YzbP9J2w+oIo3guf/0nQQj9Fo8UjemJ0tSTf1R8KDCscCgyP6gKKmqtLn25IEkrbzXeLoRdQZ5KLxTHosGQU45G9ASG0kPim2SSVg613i6EenICF8guogTd0M9zqiZmK4B3xItElvoXWm8WxiCRp67s44zkA7bKo9Z7hXGZDOKm3JWCKVuFX5KGi6nkgCE5cUuuK/yW5puFsZnsiBtSFyZnND6fGel/Sc5OJWc1z5KG3Ib7mOSg71WlLhQYLmq+Vxhla5iGNWSDNUzFGrLBGqZiDdlgDVOxhmywhqlYQzZYw1SsIYy9/vLq/rAZMdxfXe7v4ZtkZLjWX13qtNvN5kJMs9lud5ZW+2u4ZtkYvjgI5RaShJoHLzANMzFcGXZEek+SneEKvGkWhitL7VS9mPYS2JGB4avhPL+p4/AVrPn8DV9m5OfPufoS1H7ehntSAfwWRsjgkbNhX1g/U8PY7qv/iXwN33cU/CI675X/Rq6Gy6qCoeLyr2QIEAQo5mionKJPioqJmp9hHyYYKqqVm9wM9+RHiVnaSoNGboZDlWHiZ5rDX8HwJTyEYRBVZjc5Gb6CdsKYjsIcNSdDRI5GqORpPoYrmByNaMsvpvIxRPpF8DZEh1AliLkYDgliKN0T8zB8gSukMR3Zx1N5GB7gCmlM84Cv4Rq+F0a0JZ+j5mDYJzKUnIDnYLhKkaRhmq6yNVwiEVxYWOJquEdRSSM6coso84ZE3VC6I5o3XCYzlHtiY96QqNBIlxrzhvtkhvtMDSkmpTFyU1PzhlQhDIOo1/B1sTVDkamhN/vDEl/kDD98/XOGr3/LXEc0K5U3vEz+tITcnpmq93wGV26ru+kYgklusbWGT5iupeYNTY+H5g1Nz2nMG5qel5o3NL22MG9oen1o3tD0Gh8M3NDwcxowcEPDz9rAwA0NPy8FAzc0/MwbDMLQ7HsLMAhDs++ewGAMjb4/BIMxNPoOGAzK0OR7fDAoQ5PfYoDBGRr8ngYMztDgN1FgkIbmvmsDgzU09m0iGKyhse9LwaANTX0jDAZvaOg7bzAEhma+1QdDYWhkvwUYEkMTe2bA0Bga2PcEhshQ/941MGSGuvcfgqEz1LyHFAylodZ9wGBoDTXu5QZDbahtPz4YesMIDb+pAEaPIYLjq5Prbrdburm7nZA0yMtwclUK5Z7odk8eCNrkZDi++6H3JHl9jG6VkeFxacZv6niHbZaP4b3AbxpGZHdkY3glFozAKXIxTIlgDOpn/pkYHmcJlk4wTfMwHGf5hX3xHtE2D8O7zBCGioiuyMJwMkewVEKMGSwMM+ooPogsDOf5hYa34MY5GGYX0hh4OeVgOD9JMWnKwfBkvmCpC56CczC8ljEEL6Q4GEokKWLQFxjuUt69DFKG4GK6njQEnGOKQ28MN5JHRUmewUOHhCAihoLzvjy53TZ03MgYwh9nJM/gCZTPokVyJ2P4D7h5xGFYVNzKdER482XBmW2QU6ERzF9aoBYXDcSZbVTMn9QguqHoVDq1g1oJeJgbxGtM8yOBoelBf968DT5nixAcnii7xZaMeeunG1TryVlNhOE8zX5QgxgqppwLBN13NHcuTVaeIhb4MduCWmN8djrJELzCNi46qDWKotlETVXECwoH/UjRMVtuxifCvohO0QjRkDitqLtmwyh4d9G9QRaZJ8RBDMPo1o1O4CYzr0i71xQvgSOER3tPqQWDS5OLqcn9TfcbpTv8C+DvXArHxDiOgbe5s1uug4D05Mnxw+39/e0DTXp+J3mO6c/Z6tYgfDE9hc9gK6Un4jC+SMmikZ6nv4lhoZwyZPw+hoUBfaIyMyyMMqvN72DYO6dW5GZY6I2IE5WdYdgXacsNQ8NCmXTQ4GhYaNQIOyNLw8LWDl0YeRoWCtsOVcHhaljolQMaR7aGYaqWXYqqytgwjOP2uYcOJGvDkPX6KAhQpZW7YchWozzYdGue5wUQOK2As+htrFerDRDred+7xWKxWCwWi8VisVgsll+TfwGEehHP1v6oBAAAAABJRU5ErkJggg==");
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
+main .main-buttons div{
+    display: inline-block;
+    
+}
+main. .main-buttons button{
+    border: 0;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color:#3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+}
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px #rgba(0,0,0,.1);
+    background-color: #f8f9fa
+    border: 1px dotted #dadce0;
+    color: #202124;
+    cursor: pointer;
+
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13PX;
+    border top: 1px solid #e4e4e4;
+    /*footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    align-items: center;
+    bottom:0%;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+
+}
+footer .footer-left{
+    justify-self: left;
+}
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    color: #70577a;
+    margin: 10px;
+
+}
